@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Transaction</title>
+</head>
+<body>
+    <h1>Edit Transaction</h1>
+    <form action="/expenses/<%=expense._id %>?_method=PUT" method="POST">
+    <label>Description
+      <input type="text" name="text" value="<%= expense.text %>">  
+    </label>
+    <label>Amount
+        <input type="text" name="amount" value="<%= expense.amount %>">  
+      </label>
+    <button type="submit">Save Changes</button>
+
+    </form>
+
+
+    
+</body>
+</html>

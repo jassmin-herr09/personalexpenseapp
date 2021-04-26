@@ -4,21 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Expenses | Add new Transaction</title>
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Add a new transaction</title>
 </head>
-<body>
-    <h1>Enter a new transaction</h1>
+<body class="teal lighten-5 ">
+    <h3 class="center-align">Enter a new transaction</h3>
+ <div class="container white" style="min-height: 100vh; padding: 20px"> <!-- container-->
+  
     <form action="/expenses" method="POST">
-        <label>Text:
-            <input type="text" name="text">
-        </label>
-        <label>Amount:
-            <input type="text" name="amount">
-            <input type="submit" value="Add transaction">
-        </label>
+      <label>
+          
+      <input type="text" name="text" class="details-form" placeholder="Enter details" >
+    
+      </label>
+   
+     
+      <label>
+        <input type="text" name="amount"class="amount-form" placeholder="Enter amount">
+    </label>
+    <div id="forbuttons">
+        <a href="/expenses/new" class="add-button"><button class ="btn waves-effect waves-light add-new-btn">Add new transaction</button></a>
         
+        <!-- <div id="contain" class ="btn waves-effect waves-light" class="left-align">
+            <INPUT TYPE="button" class="back-button" VALUE="Back" onClick="history.go(-1);">
+                
+                
+            </div>
+            <div id="contain2">
+                <input type="submit" value="Add Transaction" class="waves-effect waves-light btn-small back-button">
+            </div> -->
+            
+        </div> 
         
     </form>
-    
+    <a href="/expenses" class="add-button"><button class ="btn waves-effect waves-light add-new-btn">Back</button></a>
+
+</div>
+
 </body>
 </html>

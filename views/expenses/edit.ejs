@@ -8,12 +8,12 @@
 </head>
 <body>
     <h1>Edit Transaction</h1>
-    <form action="/expenses/<%=expense._id %>?_method=PUT" method="POST">
+    <form action="/expenses/<%=expense._id %>?_method=PUT" method="POST" autocomplete="off">
     <label>Description
-      <input type="text" name="text" value="<%= expense.text %>">  
+      <input type="text" name="text" value="<%= expense.text %>" autocomplete="off" >  
     </label>
     <label>Amount
-        <input type="text" name="amount" value="<%= expense.amount %>">  
+        <input type="text" name="amount" value="<%= expense.amount %>" autocomplete="off" >  
       </label>
     <button type="submit">Save Changes</button>
 

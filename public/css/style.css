@@ -1,0 +1,42 @@
+.moneypic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 16%;
+
+}
+
+.add-button {
+ display: block;
+ text-align: center;
+ padding: 15px;
+ 
+}
+
+.see-button {
+  display: block;
+  text-align: center;
+  padding: 5px;
+}
+
+#contain2{
+   text-align: right;
+
+}
+
+#contain{
+  text-align: left;
+}
+
+#forbuttons {
+
+/* display: flex;
+justify-content: space-between; */
+
+}
+
+.back-button{
+ height: 100%;
+
+}
+

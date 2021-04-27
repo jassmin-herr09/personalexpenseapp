@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <title>Transactions</title>
 </head>
-<body>
-    <h1>Edit or Delete transactions</h1>
+<body class="teal lighten-5 ">
+  <div class="container white" style="min-height: 100vh; padding: 20px"> <!-- container-->
+
+    <h2>Edit or Delete transactions</h2>
     <div><% let newAmount = 0; %>
         <% expenses.forEach(function(expense){ %>
        <% newAmount += expense.amount; %>   
     <% }) %>
     <p><%= newAmount %></p>
    </div>
-   <table id="expenselist">
+   <table id="expenselist" class="striped">
         <thead>
           <tr>
             <th>Expense</th>
@@ -43,6 +53,8 @@
 
    </table>
    <br>
-   <a href="/">Back</a>   
+   <a href="/expenses/new">Back</a>  
+</div>
+   
 </body>
 </html>

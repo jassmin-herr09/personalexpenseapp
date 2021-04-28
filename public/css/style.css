@@ -33,3 +33,10 @@
 
 }
 
+.tag-remove{
+    content: 'x'; // here is your X(cross) sign.
+    color: #fff;
+    font-weight: 300;
+    font-family: Arial, sans-serif;
+}
+

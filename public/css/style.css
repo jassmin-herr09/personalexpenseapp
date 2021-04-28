@@ -32,11 +32,16 @@
  height: 100%;
 
 }
+.balance{
+    display: flex;
+    margin-top: auto;
 
-.tag-remove{
-    content: 'x'; // here is your X(cross) sign.
-    color: #fff;
-    font-weight: 300;
-    font-family: Arial, sans-serif;
+
 }
 
+.container-phone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

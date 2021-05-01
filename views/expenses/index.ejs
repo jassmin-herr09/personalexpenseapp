@@ -18,7 +18,8 @@
   <div class="container white" style="min-height: 100vh; padding: 20px"> <!-- container-->
 
     <h2>Transactions</h2>
-    <div class="balance"><p>Total Balance</p> <% let newAmount = 0; %>
+     <div class="balance">
+       <p>Balance</p> <% let newAmount = 0; %>
         <% expenses.forEach(function(expense){ %>
        <% newAmount += expense.amount; %>   
     <% }) %>
@@ -40,7 +41,7 @@
          <td> 
            <form action="/expenses/<%=expense._id %>?_method=DELETE" method="POST">
            
-          <button type="submit" class="waves-effect waves-light btn-small">Delete</button>
+          <button type="submit" class="waves-effect waves-light btn-small red">Delete</button>
         </form>  
          </td>
 

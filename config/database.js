@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
-const connectionString = 'mongodb+srv://admin:abc1234@cluster0.w38il.mongodb.net/personal-expense-app?retryWrites=true&w=majority';
+const connectionURI = process.env.DATABASE_URI;
 
-mongoose.connect(connectionString, { // this connects to mongoDb
+mongoose.connect(connectionURI, { // this connects to mongoDb
     useNewUrlParser: true,
     useCreateIndex: true, // efficient access to data
     useUnifiedTopology: true, //allows intermittent break period, connect to mongoDb

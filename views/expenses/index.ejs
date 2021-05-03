@@ -18,11 +18,12 @@
   <div class="container white" style="min-height: 100vh; padding: 20px"> <!-- container-->
 
     <h2>Transactions</h2>
-    <div class="balance"><p>Total Balance</p> <% let newAmount = 0; %>
+    <div class="balance">
+      <p id="totalbalance">Total Balance</p> <% let newAmount = 0; %>
         <% expenses.forEach(function(expense){ %>
        <% newAmount += expense.amount; %>   
     <% }) %>
-    <p><%= newAmount %></p>
+    <p id="newamount"><%= newAmount %></p>
    </div>
    <table id="expenselist" class="striped">
         <thead>

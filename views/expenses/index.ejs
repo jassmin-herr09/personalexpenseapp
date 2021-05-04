@@ -36,7 +36,7 @@
       <% expenses.forEach(function(expense){ %>
         <tr>
             <td><%= expense.text %></td>
-            <td><%= expense.amount %></td>
+            <td> $ <%= expense.amount %></td>
          <td><a href="/expenses/<%= expense._id %>">Edit</a></td>
          <td> 
            <form action="/expenses/<%=expense._id %>?_method=DELETE" method="POST">

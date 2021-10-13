@@ -9,7 +9,8 @@
 .add-button {
  display: block;
  text-align: center;
- padding: 15px;
+ padding: 45px;
+ padding-bottom: 80px;
  
 }
 
@@ -18,7 +19,7 @@
   text-align: center;
   padding: 5px;
 }
-````
+
 #contain2{
    text-align: right;
 
@@ -51,4 +52,18 @@
  font-weight: bold;
  margin-right: 10px;
 }
+.footer {
+ display: flex;
+ display: inline;
 
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
